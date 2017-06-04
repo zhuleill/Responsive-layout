@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background: black;
+				margin: 20px;
+				transition: all 2s;
+			}
+			
+			/*媒体：当浏览器窗口满足制定要求范围，做出相应*/
+			@media only screen and (min-width:760px ) and (max-width:1080px) {
+				.box1{
+					background: yellow;
+				}
+				
+				.box2{
+					width: 300px;
+				}
+				.box3{
+					display: none;
+					transition-delay: 2s;
+				}
+			}
+			
+			@media only screen and (max-width:760px ) {
+				.box4{
+					background: darkblue;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<br />
+		
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		
+	</body>
+</html>
